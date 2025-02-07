@@ -59,6 +59,22 @@ body {
   }
 }
 
+/* Custom Navbar Styles */
+.custom-navbar {
+  background-color: transparent; // Navbar transparan
+  // Jika ingin menambahkan transisi atau perubahan saat scroll, dapat ditambahkan di sini
+}
+
+/* (Opsional) Styling untuk tombol toggler saat ikon X */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  color: $primary-color; // Atur warna sesuai kebutuhan
+}
+
+
 /* Parallax Class */
 .parallax {
   background-attachment: fixed;
