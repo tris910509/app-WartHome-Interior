@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons (opsional) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- Custom CSS (hasil kompilasi dari SASS) -->
+  <!-- Custom CSS (hasil kompilasi SASS) -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,8 +22,8 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#carousel-section">Highlight</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#heroCarousel">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlight">Highlight</a></li>
           <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
           <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
@@ -33,8 +33,8 @@
   </nav>
 
   <!-- Hero Section dengan Carousel Slide -->
-  <section class="hero-carousel">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <section id="heroCarousel" class="hero-carousel">
+    <div id="heroCarouselInner" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url('https://via.placeholder.com/1920x1080?text=Interior+Design+1');">
@@ -65,28 +65,29 @@
         </div>
       </div>
       <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarouselInner" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Sebelumnya</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarouselInner" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Selanjutnya</span>
       </button>
     </div>
   </section>
 
-  <!-- Carousel Slide Section untuk Highlight (bisa dipertahankan atau dihapus jika ingin mengutamakan hero carousel) -->
-  <section id="carousel-section" class="py-5">
+  <!-- Highlight Carousel Section -->
+  <section id="highlight" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Desain Unggulan</h2>
-      <div id="designCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="highlightCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#designCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#highlightCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#highlightCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#highlightCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
+          <!-- Highlight Slide 1 -->
           <div class="carousel-item active">
             <img src="https://via.placeholder.com/1920x800?text=Desain+Minimalis" class="d-block w-100" alt="Desain Minimalis">
             <div class="carousel-caption d-none d-md-block">
@@ -94,6 +95,7 @@
               <p>Sentuhan minimalis untuk tampilan yang bersih dan modern.</p>
             </div>
           </div>
+          <!-- Highlight Slide 2 -->
           <div class="carousel-item">
             <img src="https://via.placeholder.com/1920x800?text=Desain+Kontemporer" class="d-block w-100" alt="Desain Kontemporer">
             <div class="carousel-caption d-none d-md-block">
@@ -101,6 +103,7 @@
               <p>Modern dan stylish dengan perpaduan warna yang harmonis.</p>
             </div>
           </div>
+          <!-- Highlight Slide 3 -->
           <div class="carousel-item">
             <img src="https://via.placeholder.com/1920x800?text=Desain+Industrial" class="d-block w-100" alt="Desain Industrial">
             <div class="carousel-caption d-none d-md-block">
@@ -109,11 +112,11 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#highlightCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Sebelumnya</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#highlightCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Selanjutnya</span>
         </button>
@@ -121,8 +124,157 @@
     </div>
   </section>
 
-  <!-- Sisa konten (Galeri, Fitur, Kontak, Modal, Footer) dapat ditambahkan di sini -->
-  <!-- ... -->
+  <!-- Gallery Section -->
+  <section id="galeri" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Galeri Desain Interior</h2>
+        <p>Inspirasi desain modern yang mengutamakan estetika dan fungsionalitas.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Gallery Card 1 -->
+        <div class="col-md-4">
+          <div class="card gallery-card">
+            <img src="https://via.placeholder.com/600x400?text=Galeri+1" class="card-img-top" alt="Desain Minimalis Elegan">
+            <div class="card-body">
+              <h5 class="card-title">Minimalis Elegan</h5>
+              <p class="card-text">Tampilan bersih dengan sentuhan modern.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery Card 2 -->
+        <div class="col-md-4">
+          <div class="card gallery-card">
+            <img src="https://via.placeholder.com/600x400?text=Galeri+2" class="card-img-top" alt="Desain Kontemporer Chic">
+            <div class="card-body">
+              <h5 class="card-title">Kontemporer Chic</h5>
+              <p class="card-text">Perpaduan warna dan elemen modern untuk tampilan chic.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery Card 3 -->
+        <div class="col-md-4">
+          <div class="card gallery-card">
+            <img src="https://via.placeholder.com/600x400?text=Galeri+3" class="card-img-top" alt="Desain Industrial Urban">
+            <div class="card-body">
+              <h5 class="card-title">Industrial Urban</h5>
+              <p class="card-text">Kesan maskulin dengan elemen logam dan industrial.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="fitur" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Fitur Unggulan</h2>
+        <p>Teknologi cerdas dan desain inovatif untuk kenyamanan Anda.</p>
+      </div>
+      <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-display feature-icon"></i>
+            <h4>Desain Responsif</h4>
+            <p>Tampilan optimal di semua perangkat, dari mobile hingga desktop.</p>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-brush feature-icon"></i>
+            <h4>Kustomisasi Dinamis</h4>
+            <p>Personalisasi desain sesuai kepribadian dan kebutuhan Anda.</p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-gear feature-icon"></i>
+            <h4>Integrasi Teknologi</h4>
+            <p>Sistem cerdas untuk kontrol ruang yang efisien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Hubungi Kami</h2>
+        <p>Kami siap membantu mewujudkan interior impian Anda.</p>
+      </div>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-12">
+          <textarea class="form-control" rows="5" placeholder="Pesan Anda" required></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Gallery Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Desain Minimalis Elegan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Minimalis+Detail" class="img-fluid mb-3" alt="Desain Minimalis Elegan">
+          <p>Desain minimalis dengan palet warna netral yang menciptakan kesan elegan dan fungsional. Cocok untuk ruang tamu dan kantor modern.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Desain Kontemporer Chic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Kontemporer+Detail" class="img-fluid mb-3" alt="Desain Kontemporer Chic">
+          <p>Perpaduan warna dan elemen modern yang menghasilkan tampilan chic serta stylish. Ideal untuk ruang keluarga dan area komersial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Desain Industrial Urban</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Industrial+Detail" class="img-fluid mb-3" alt="Desain Industrial Urban">
+          <p>Desain industrial dengan elemen logam dan material kasar, memberikan kesan kuat dan maskulin untuk ruang kreatif atau studio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer bg-dark text-white py-4">
@@ -135,7 +287,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JavaScript -->
   <script>
-    // Contoh handler untuk form kontak (jika ada)
     const form = document.querySelector('form');
     if (form) {
       form.addEventListener('submit', function(event) {
