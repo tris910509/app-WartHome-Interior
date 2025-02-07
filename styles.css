@@ -92,35 +92,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
-  background-color: #1a237e; /* Biru dongker tua */
-  color: #ffffff;
-  text-align: center;
-  padding: 100px 20px;
-  overflow: hidden;
   }
-
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: #1a237e;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-}
   
   .overlay {
     position: absolute;
