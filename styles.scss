@@ -1,0 +1,134 @@
+// Variabel Dasar
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$light-bg: #f8f9fa;
+$dark-bg: #343a40;
+$text-color: #212529;
+$body-font: 'Poppins', sans-serif;
+$transition-speed: 0.3s;
+
+// Reset & Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  color: $text-color;
+  background: $light-bg;
+  line-height: 1.6;
+}
+
+// Navbar
+.navbar {
+  padding: 1rem 0;
+  .navbar-brand {
+    font-weight: bold;
+    color: $primary-color;
+  }
+  .nav-link {
+    color: $text-color;
+    transition: color $transition-speed ease;
+    &:hover,
+    &.active {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+// Hero Section dengan Parallax dan Nuansa Interior
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  /* Ganti URL background dengan gambar interior yang sesuai */
+  background: url('https://via.placeholder.com/1920x1080?text=Interior+Design') center center / cover no-repeat fixed;
+
+  // Overlay untuk mempergelap background agar teks lebih terbaca
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Carousel Section
+#carousel-section {
+  h2 {
+    margin-bottom: 2rem;
+    color: $primary-color;
+  }
+}
+
+// Gallery Cards
+.gallery-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform $transition-speed ease, box-shadow $transition-speed ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  img {
+    transition: transform $transition-speed ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Feature Box
+.feature-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform $transition-speed ease, box-shadow $transition-speed ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+}
+
+// Footer
+.footer {
+  background: $dark-bg;
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+// Responsivitas
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
