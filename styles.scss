@@ -203,3 +203,11 @@ body {
     }
   }
 }
+
+
+/* Parallax Class */
+.parallax {
+  background-attachment: fixed; /* Opsional bila ingin fallback */
+  background-size: cover;
+  background-position: center;
+}
