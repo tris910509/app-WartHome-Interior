@@ -231,6 +231,18 @@ body {
   margin-bottom: 15px; /* Jarak bawah antara gambar dan teks */
 }
 
+#info-section {
+  background-color: #001f3f; /* Warna biru dongker tua */
+  color: #ffffff; /* Warna teks putih */
+}
+
+#info-section h3 {
+  margin-bottom: 15px;
+}
+
+#info-section p {
+  margin-bottom: 0;
+}
 
 /* Parallax Class */
 .parallax {
