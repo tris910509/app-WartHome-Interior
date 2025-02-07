@@ -221,6 +221,15 @@ body {
 }
 
 
+.testimonial img {
+  width: 100px; /* Sesuaikan ukuran lebar gambar */
+  height: 100px; /* Sesuaikan ukuran tinggi gambar */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover; /* Memastikan gambar terpotong dengan proporsional */
+  margin-bottom: 15px; /* Jarak bawah antara gambar dan teks */
+}
+
+
 /* Parallax Class */
 .parallax {
   background-attachment: fixed; /* Opsional bila ingin fallback */
