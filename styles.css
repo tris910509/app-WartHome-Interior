@@ -244,6 +244,16 @@ body {
   margin-bottom: 0;
 }
 
+.navbar {
+  background-color: #1a237e; /* Warna biru dongker tua */
+}
+
+.navbar.scrolled {
+  background-color: #0d47a1; /* Warna biru yang lebih terang */
+  transition: background-color 200ms linear;
+}
+
+
 /* Parallax Class */
 .parallax {
   background-attachment: fixed; /* Opsional bila ingin fallback */
