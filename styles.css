@@ -261,3 +261,31 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.accordion .card-header .btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #007bff;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    .accordion .card-header .btn:hover {
+      text-decoration: none;
+    }
+    .accordion .card-header .btn:after {
+      content: '\f067'; /* FontAwesome plus icon */
+      font-family: 'FontAwesome';
+      font-size: 1rem;
+      transition: transform 0.2s;
+    }
+    .accordion .card-header .btn.collapsed:after {
+      content: '\f068'; /* FontAwesome minus icon */
+    }
+
