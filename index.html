@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W'Art Home Interior</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (opsional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS (hasil kompilasi SASS) -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm  custom-navbar ">
+    <div class="container">
+      <a class="navbar-brand" href="#">W'Art Home Interior</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#heroCarousel">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlight">Highlight</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section dengan Carousel Slide, Parallax, & Animasi Tulisan -->
+  <section id="heroCarousel" class="hero-carousel parallax">
+    <div id="heroCarouselInner" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('img/s1.jpg');">
+          <div class="overlay"></div>
+          <div class="container text-center animated-text">
+            <h1 class="display-3">Ruang Inspiratif</h1>
+            <p class="lead">Nikmati suasana interior yang menawan dan modern.</p>
+            <a href="#galeri" class="btn btn-primary btn-sm">Lihat Galeri</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('img/s2.jpg');">
+          <div class="overlay"></div>
+          <div class="container text-center animated-text">
+            <h1 class="display-3">Desain Elegan</h1>
+            <p class="lead">Sentuhan elegan untuk ruang yang penuh inspirasi.</p>
+            <a href="#galeri" class="btn btn-primary btn-sm">Jelajahi Koleksi</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('img/s3.jpg');">
+          <div class="overlay"></div>
+          <div class="container text-center animated-text">
+            <h1 class="display-3">Kecanggihan Interior</h1>
+            <p class="lead">Rancang ruang Anda dengan teknologi dan desain mutakhir.</p>
+            <a href="#kontak" class="btn btn-primary btn-sm">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarouselInner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarouselInner" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Selanjutnya</span>
+      </button>
+    </div>
+  </section>
+  <!-- Highlight Carousel Section -->
+  <section id="highlight" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Kolom Gambar -->
+        <div class="col-md-6">
+          <img src="img/m.png" class="img-fluid animated-img" alt="Produk Interior Modern Fredly">
+        </div>
+        <!-- Kolom Teks -->
+        <div class="col-md-6">
+          <h2>Kenapa Harus W'Art Home Interior?</h2>
+          <div class="container mt-5">
+            <div class="accordion" id="accordionExample">
+                
+                <div>
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-brush-fill me-2"></i> Desain Eksklusif & Berkelas
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Kami menciptakan konsep interior yang unik dan personal, sesuai dengan kepribadian dan kebutuhan Anda. Setiap detail dirancang untuk memberikan kenyamanan dan estetika terbaik.
+                        </div>
+                    </div>
+                </div>
+    
+                <div >
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-gem me-2"></i> Material Berkualitas Tinggi
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Kami hanya menggunakan bahan premium yang tidak hanya tahan lama tetapi juga memiliki nilai estetika tinggi. Setiap elemen dipilih dengan cermat untuk menciptakan ruang yang nyaman dan berkelas.
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-people-fill me-2"></i> Tim Profesional & Konsultan Interior Berpengalaman
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Dibantu oleh desainer dan pengrajin terbaik, kami memastikan setiap proyek berjalan lancar dan sesuai ekspektasi. Kami juga menyediakan konsultasi interior gratis untuk membantu Anda memilih konsep, warna, dan material terbaik yang sesuai dengan anggaran dan kebutuhan Anda.
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-sliders me-2"></i> Kustomisasi Sesuai Keinginan Anda
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Setiap klien memiliki selera dan kebutuhan yang berbeda. Karena itu, kami menawarkan desain yang bisa disesuaikan dengan keinginan Anda, baik dari segi warna, material, maupun tata ruang.
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="bi bi-check-circle-fill me-2"></i> Proses Efisien, Transparan & Mudah
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Kami memastikan setiap tahapan proyek berjalan sesuai rencana dengan komunikasi yang jelas dan transparan. Anda akan mendapatkan update berkala mengenai progres pengerjaan, sehingga semuanya berjalan sesuai harapan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+  </section>
+
+  <!-- Highlight Section: Teks di Kiri, Gambar di Kanan -->
+<section id="highlight" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Kolom Teks (Kiri) -->
+      <div class="col-md-6">
+        <div class="container mt-5">
+          <h2 class="mb-4">Layanan Kami</h2>
+          <div class="accordion" id="layananAccordion">
+              
+              <div >
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <i class="fas fa-home me-2"></i> Desain Interior Rumah
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#layananAccordion">
+                      <div class="accordion-body">
+                          Dari ruang tamu hingga kamar tidur, kami hadirkan suasana yang nyaman dan elegan.
+                      </div>
+                  </div>
+              </div>
+              
+              <div >
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="fas fa-building me-2"></i> Desain Interior Kantor
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#layananAccordion">
+                      <div class="accordion-body">
+                          Ciptakan lingkungan kerja yang inspiratif dan produktif.
+                      </div>
+                  </div>
+              </div>
+              
+              <div >
+                  <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="fas fa-sync-alt me-2"></i> Renovasi Interior
+                      </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#layananAccordion">
+                      <div class="accordion-body">
+                          Ubah ruang lama Anda menjadi lebih segar dan modern.
+                      </div>
+                  </div>
+              </div>
+              
+              <div >
+                  <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <i class="fas fa-couch me-2"></i> Furniture Custom
+                      </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#layananAccordion">
+                      <div class="accordion-body">
+                          Kami menyediakan solusi furnitur yang disesuaikan dengan kebutuhan dan gaya Anda.
+                      </div>
+                  </div>
+              </div>
+              
+              <div>
+                  <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <i class="fas fa-comments me-2"></i> Konsultasi Desain
+                      </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#layananAccordion">
+                      <div class="accordion-body">
+                          Tim ahli kami siap membantu Anda dalam menentukan konsep terbaik sesuai keinginan dan anggaran Anda.
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <!-- Kolom Gambar (Kanan) -->
+      <div class="col-md-6">
+        <img src="img/m2.jpeg" class="img-fluid animated-img" alt="Gambar Desain Modern">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section id="fitur" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Fitur Unggulan</h2>
+        <p>Teknologi cerdas dan desain inovatif untuk kenyamanan Anda.</p>
+      </div>
+      <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-display feature-icon"></i>
+            <h4>Desain Responsif</h4>
+            <p>Tampilan optimal di semua perangkat, dari mobile hingga desktop.</p>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-brush feature-icon"></i>
+            <h4>Kustomisasi Dinamis</h4>
+            <p>Personalisasi desain sesuai kepribadian dan kebutuhan Anda.</p>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="feature-box text-center p-4">
+            <i class="bi bi-gear feature-icon"></i>
+            <h4>Integrasi Teknologi</h4>
+            <p>Sistem cerdas untuk kontrol ruang yang efisien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Gallery Section -->
+<section id="galeri" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Galeri W'Art Home Interior</h2>
+      <p>Inspirasi desain modern yang mengutamakan estetika dan fungsionalitas.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Gallery Card 1 -->
+      <div class="col-md-4">
+        <div class="card gallery-card">
+          <img src="img/k1.jpg" class="card-img-top animated-img" alt="Desain Minimalis Elegan">
+          <div class="card-body">
+            <h5 class="card-title">Kichen Set</h5>
+            <p class="card-text">Tampilan bersih dengan sentuhan modern.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery Card 2 -->
+      <div class="col-md-4">
+        <div class="card gallery-card">
+          <img src="img/k2.jpg" class="card-img-top animated-img" alt="Desain Kontemporer Chic">
+          <div class="card-body">
+            <h5 class="card-title">Interior Tangga</h5>
+            <p class="card-text">Perpaduan warna, elemen modern dan klasik memberikan nuansa natural dan estentik.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery Card 3 -->
+      <div class="col-md-4">
+        <div class="card gallery-card">
+          <img src="img/k3.jpg" class="card-img-top animated-img" alt="Desain Industrial Urban">
+          <div class="card-body">
+            <h5 class="card-title">Ruangan yang Nyaman & Penuh Karakter</h5>
+            <p class="card-text">Desain yang tepat, ruang tamu, kamar tidur, dapur, hingga ruang kerja bisa menjadi tempat yang tidak hanya fungsional, tetapi juga mencerminkan kepribadian Anda.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">Selengkapnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Tata Cara Konsultasi & Pemesanan</h2>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep1">
+                <div class="card-body">
+                    <i class="bi bi-chat-dots display-4"></i>
+                    <h5 class="card-title mt-2">1️⃣ Konsultasi Awal</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep2">
+                <div class="card-body">
+                    <i class="bi bi-rulers display-4"></i>
+                    <h5 class="card-title mt-2">2️⃣ Survei & Desain Konsep</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep3">
+                <div class="card-body">
+                    <i class="bi bi-credit-card display-4"></i>
+                    <h5 class="card-title mt-2">3️⃣ Persetujuan & Pembayaran Awal</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep4">
+                <div class="card-body">
+                    <i class="bi bi-tools display-4"></i>
+                    <h5 class="card-title mt-2">4️⃣ Proses Produksi & Pengerjaan</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep5">
+                <div class="card-body">
+                    <i class="bi bi-clipboard-check display-4"></i>
+                    <h5 class="card-title mt-2">5️⃣ Penyelesaian & Finalisasi</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-center" data-bs-toggle="modal" data-bs-target="#modalStep6">
+                <div class="card-body">
+                    <i class="bi bi-house-check display-4"></i>
+                    <h5 class="card-title mt-2">6️⃣ Serah Terima & Garansi</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal Templates -->
+<div class="modal fade" id="modalStep1" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">1️⃣ Konsultasi Awal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Hubungi kami melalui WhatsApp, telepon, atau email untuk menjadwalkan konsultasi. Jelaskan kebutuhan Anda, seperti luas ruangan, konsep yang diinginkan, dan anggaran yang tersedia.
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalStep2" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">2️⃣ Survei & Desain Konsep</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Kami melakukan survei ke lokasi dan menyusun konsep desain awal berdasarkan preferensi Anda. Setelah disetujui, desain 3D akan dibuat untuk visualisasi lebih nyata.
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalStep3" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">3️⃣ Persetujuan & Pembayaran Awal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Setelah desain final disepakati, Anda akan menerima penawaran harga resmi dan melakukan DP (Down Payment) sebesar 50% sebagai tanda jadi proyek. 
+             30% pembayaran kedua saat proses pengerjaan mencapai 50%. dan 20% pelunasan sebelum serah terima proyek. Kami memastikan proses pembayaran yang aman dan transparan untuk kenyamanan Anda.
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalStep4" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">4️⃣ Proses Produksi & Pengerjaan</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Pengerjaan akan dimulai sesuai jadwal yang telah disepakati, dengan update berkala mengenai progres proyek.
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalStep5" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">5️⃣ Penyelesaian & Finalisasi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Setelah pengerjaan selesai, kami akan melakukan inspeksi bersama untuk memastikan semua detail sesuai. Pelunasan pembayaran dilakukan sebelum serah terima.
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalStep6" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">6️⃣ Serah Terima & Garansi</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              Kami menyerahkan proyek dalam kondisi siap digunakan dan menyediakan garansi layanan untuk kepuasan Anda.
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- Testimonial Section dengan Parallax Background -->
+  <section id="testimoni" class="py-5 parallax">
+  <div class="overlay"></div>
+  <div class="container">
+    <h2 class="text-center mb-4 text-white">Testimoni Pelanggan</h2>
+    <div id="testimoniCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Testimoni Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <img src="img/p.png" alt="Foto Andi Saputra">
+              <p class="mb-4">"Desain interior yang luar biasa! Rumah saya kini terasa lebih modern dan nyaman."</p>
+              <h5>Andi Saputra</h5>
+              <span class="text-muted">Jakarta</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimoni Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <img src="img/p1.png" alt="Foto Siti Aminah" width="90">
+              <p class="mb-4">"Pelayanan profesional dan kreatif. Hasilnya melebihi ekspektasi saya."</p>
+              <h5>Siti Aminah</h5>
+              <span class="text-muted">Bandung</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimoni Slide 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <img src="path/to/image3.jpg" alt="Foto Rizki Pratama">
+              <p class="mb-4">"Sangat direkomendasikan! Desain interior yang inovatif dan penuh inspirasi."</p>
+              <h5>Rizki Pratama</h5>
+              <span class="text-muted">Surabaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Selanjutnya</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <div class="container mt-5" id="kontak">
+    <h2 class="text-center mb-4 ">Hubung Kontak Kami !!</h2>
+                <form id="contactForm">
+                    <div class="form-group mb-3">
+                        <label for="nama"><i class="fas fa-user"></i> Nama</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="nohp"><i class="fas fa-phone"></i> No Handphone</label>
+                        <input type="tel" class="form-control" id="nohp" placeholder="Masukkan no handphone" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="keterangan"><i class="fas fa-comment"></i> Keterangan</label>
+                        <textarea class="form-control" id="keterangan" rows="3" placeholder="Masukkan keterangan" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-30">
+                        <i class="fas fa-paper-plane"></i> Kirim
+                    </button>
+                </form>
+                
+                <!-- Tempat Menampilkan Email Setelah Submit -->
+                <p id="emailTampil" class="mt-3 text-success" style="display: none;"></p>
+           
+    </div>
+
+   </section>
+   <br><br>
+  <!-- Gallery Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Desain Minimalis Elegan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Minimalis+Detail" class="img-fluid mb-3" alt="Desain Minimalis Elegan">
+          <p>Desain minimalis dengan palet warna netral yang menciptakan kesan elegan dan fungsional. Cocok untuk ruang tamu dan kantor modern.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Desain Kontemporer Chic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Kontemporer+Detail" class="img-fluid mb-3" alt="Desain Kontemporer Chic">
+          <p>Perpaduan warna dan elemen modern yang menghasilkan tampilan chic serta stylish. Ideal untuk ruang keluarga dan area komersial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Desain Industrial Urban</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://via.placeholder.com/800x500?text=Desain+Industrial+Detail" class="img-fluid mb-3" alt="Desain Industrial Urban">
+          <p>Desain industrial dengan elemen logam dan material kasar, memberikan kesan kuat dan maskulin untuk ruang kreatif atau studio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian Informasi Sebelum Footer -->
+<section id="info-section" class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Kolom Tentang -->
+      <div class="col-md-4">
+        <h3>Tentang Kami</h3>
+        <p>
+Kami berkomitmen untuk menjadi perusahaan desain interior terdepan yang menghadirkan solusi kreatif dan berkualitas tinggi, menciptakan ruang yang tidak hanya indah tetapi juga mencerminkan karakter serta gaya hidup setiap pelanggan.
+        </p>
+      </div>
+      <!-- Kolom Alamat -->
+      <div class="col-md-4">
+        <h3><i class="bi bi-geo-alt"></i> Alamat</h3>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.3717279421753!2d107.5925!3d-6.9654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8deadeb6925%3A0x4abf704f537a00ec!2sJl.%20Terusan%20Cibaduyut%20No.53%2C%20Cangkuang%20Kulon%2C%20Kec.%20Dayeuhkolot%2C%20Kabupaten%20Bandung%2C%20Jawa%20Barat%2040239!5e0!3m2!1sen!2sid!4v1739031716457!5m2!1sen!2sid" width="300" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>
+          Jl. Terusan Cibaduyut No.53, Cangkuang Kulon <br>
+          Kec. Dayeuhkolot, Kabupaten Bandung <br>
+          Jawa Barat 40239, Indonesia.
+        </p>
+      </div>
+      <!-- Kolom Kontak -->
+      <div class="col-md-4">
+        <h3>Kontak</h3>
+        <p>
+          No Hp: +62 821-8998-2004<br>
+          Email: warthomeinterior@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Interior Canggih. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+        // Inisialisasi EmailJS (Ganti dengan Public Key Anda)
+        emailjs.init("ApwZCqr3m6Iq7ccE3");
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let nama = document.getElementById("nama").value.trim();
+            let nohp = document.getElementById("nohp").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let keterangan = document.getElementById("keterangan").value.trim();
+
+            if (!nama || !nohp || !email || !keterangan) {
+                Swal.fire("Error!", "Harap isi semua kolom!", "error");
+                return;
+            }
+
+            let formData = { nama, nohp, email, keterangan };
+            let googleScriptURL = "https://script.google.com/macros/s/AKfycbyHmMk1w99nbabeDBUC6BABlqfPNq1PBaMfP9sYu13U-k74VpZoy2-ECmxgxhSwWQTZ/exec"; // Ganti dengan URL Web App Google Apps Script
+
+            // Konfirmasi Sebelum Mengirim
+            Swal.fire({
+                title: "Konfirmasi Data",
+                html: `Apakah data berikut sudah benar?<br><br>
+                       <strong>Nama:</strong> ${nama}<br>
+                       <strong>No HP:</strong> ${nohp}<br>
+                       <strong>Email:</strong> ${email}<br>
+                       <strong>Keterangan:</strong> ${keterangan}`,
+                icon: "question",
+                showCancelButton: true,
+                confirmButtonText: "Ya, Kirim!",
+                cancelButtonText: "Batal"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    sendData(formData, googleScriptURL);
+                }
+            });
+        });
+
+        function sendData(formData, googleScriptURL) {
+            // 1️⃣ Kirim Data ke Google Sheets
+            fetch(googleScriptURL, {
+                method: "POST",
+                body: JSON.stringify(formData),
+                headers: { "Content-Type": "application/json" }
+            })
+            .then(response => response.text())
+            .then(result => {
+                console.log("Google Sheets:", result);
+            })
+            .catch(error => console.error("Error Sheets:", error));
+
+            // 2️⃣ Kirim Email via EmailJS
+            emailjs.send("service_dk3qo4y", "template_7ja89v3", formData)
+            .then(response => {
+                console.log("Email terkirim!", response);
+            }, error => {
+                console.log("Gagal mengirim email", error);
+            });
+
+            // 3️⃣ Kirim ke WhatsApp
+            let adminWhatsApp = "6281234567890"; // Ganti dengan nomor admin
+            let pesanWA = `Halo, saya ${formData.nama}.\n\n`
+                        + `📞 No HP: ${formData.nohp}\n`
+                        + `📧 Email: ${formData.email}\n`
+                        + `📝 Keterangan: ${formData.keterangan}`;
+
+            let whatsappURL = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(pesanWA)}`;
+
+            // Tampilkan Email di Halaman
+            document.getElementById("emailTampil").innerHTML = `📧 Email Anda: <strong>${formData.email}</strong>`;
+            document.getElementById("emailTampil").style.display = "block";
+
+            // Tampilkan Notifikasi Sukses
+            setTimeout(() => {
+                Swal.fire({
+                    title: "Sukses!",
+                    html: `Data telah dikirim!<br><br>
+                           <strong>Email Anda:</strong> ${formData.email}<br>
+                           Anda akan dialihkan ke WhatsApp.`,
+                    icon: "success",
+                    timer: 3000,
+                    showConfirmButton: false
+                }).then(() => {
+                    window.open(whatsappURL, "_blank");
+                    document.getElementById("contactForm").reset();
+                });
+            }, 1000);
+        }
+    </script>
+  
+<!-- Script kontak -->
+<script>
+        (function(){
+            emailjs.init("ApwZCqr3m6Iq7ccE3"); // Ganti dengan Public Key dari EmailJS
+        })();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let nama = document.getElementById("nama").value.trim();
+            let nohp = document.getElementById("nohp").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let keterangan = document.getElementById("keterangan").value.trim();
+
+            if (!nama || !nohp || !email || !keterangan) {
+                Swal.fire("Error!", "Harap isi semua kolom!", "error");
+                return;
+            }
+
+            let formData = { nama, nohp, email, keterangan };
+            let googleScriptURL = "https://script.google.com/macros/s/AKfycbw1SX1QUaZ7tDk9LX9dC-O-0eG4Q706q63gQr2aYxXzhFq6cRDOI3059ZJ_p6lwyZ8HYA/exec"; // Ganti dengan URL Web App Google Apps Script
+
+            // Konfirmasi Sebelum Mengirim
+            Swal.fire({
+                title: "Konfirmasi Data",
+                html: `Apakah data berikut sudah benar?<br><br>
+                       <strong>Nama:</strong> ${nama}<br>
+                       <strong>No HP:</strong> ${nohp}<br>
+                       <strong>Email:</strong> ${email}<br>
+                       <strong>Keterangan:</strong> ${keterangan}`,
+                icon: "question",
+                showCancelButton: true,
+                confirmButtonText: "Ya, Kirim!",
+                cancelButtonText: "Batal"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    sendData(formData, googleScriptURL);
+                }
+            });
+        });
+
+        function sendData(formData, googleScriptURL) {
+            // 1️⃣ Kirim Data ke Google Sheets
+            fetch(googleScriptURL, {
+                method: "POST",
+                body: JSON.stringify(formData),
+                headers: { "Content-Type": "application/json" }
+            })
+            .then(response => response.text())
+            .then(result => {
+                console.log(result);
+            })
+            .catch(error => console.error("Error:", error));
+
+            // 2️⃣ Kirim Email via EmailJS
+            emailjs.send("service_dk3qo4y", "template_7ja89v3", formData)
+            .then(response => {
+                console.log("Email terkirim!", response);
+            }, error => {
+                console.log("Gagal mengirim email", error);
+            });
+
+            // 3️⃣ Kirim ke WhatsApp
+            let adminWhatsApp = "6282189982004"; // Ganti dengan nomor admin
+            let pesanWA = `Halo, saya ${formData.nama}.\n\n`
+                        + `📞 No HP: ${formData.nohp}\n`
+                        + `📧 Email: ${formData.email}\n`
+                        + `📝 Keterangan: ${formData.keterangan}`;
+
+            let whatsappURL = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(pesanWA)}`;
+
+            // Tampilkan Email di Halaman
+            document.getElementById("emailTampil").innerHTML = `📧 Email Anda: <strong>${formData.email}</strong>`;
+            document.getElementById("emailTampil").style.display = "block";
+
+            // Tampilkan Notifikasi Sukses
+            setTimeout(() => {
+                Swal.fire({
+                    title: "Sukses!",
+                    html: `Data telah dikirim!<br><br>
+                           <strong>Email Anda:</strong> ${formData.email}<br>
+                           Anda akan dialihkan ke WhatsApp.`,
+                    icon: "success",
+                    timer: 3000,
+                    showConfirmButton: false
+                }).then(() => {
+                    window.open(whatsappURL, "_blank");
+                    document.getElementById("contactForm").reset();
+                });
+            }, 1000);
+        }
+    </script>
+<!-- akhir skript kontak -->
+
+  <script>
+  // Fungsi Parallax
+  window.addEventListener('scroll', function() {
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(function(el) {
+      // Ambil nilai kecepatan dari atribut data-speed (default 0.5 jika tidak didefinisikan)
+      const speed = el.getAttribute('data-speed') || 0.5;
+      // Hitung posisi scroll
+      const offset = window.pageYOffset;
+      // Update background position Y dengan kecepatan yang ditentukan
+      el.style.backgroundPositionY = -(offset * speed) + 'px';
+    });
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+ 
+<script>
+  function showDetail() {
+            document.getElementById("detail-text").style.display = "block";
+        }
+</script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    const navToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarNav');
+    
+    navbarCollapse.addEventListener('show.bs.collapse', function () {
+      // Ketika menu dibuka, ganti ikon dengan "X"
+      navToggler.innerHTML = '<i class="bi bi-x-lg"></i>';
+    });
+    
+    navbarCollapse.addEventListener('hide.bs.collapse', function () {
+      // Ketika menu tertutup, kembalikan ikon hamburger
+      navToggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+
+
+  
+  <script>
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Pesan Anda telah terkirim. Terima kasih!');
+        this.reset();
+      });
+    }
+  </script>
+</body>
+</html>
