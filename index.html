@@ -574,12 +574,39 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Desain Minimalis Elegan</h5>
+          <div>
+            <h5 class="modal-title" id="modal1Label">Project kichen Set</h5>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="https://via.placeholder.com/800x500?text=Desain+Minimalis+Detail" class="img-fluid mb-3" alt="Desain Minimalis Elegan">
-          <p>Desain minimalis dengan palet warna netral yang menciptakan kesan elegan dan fungsional. Cocok untuk ruang tamu dan kantor modern.</p>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/mod/4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/mod/5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/mod/6.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- akhir slide -->
+          <p>
+            <strong>KITCHEN SET MINIMALIS DENGAN SENTUHAN MODERN <h5>W'ART HOME INTERIOR</h5></strong>
+             W’Art Home Interior menghadirkan kitchen set minimalis dengan sentuhan modern,
+             <br>dirancang khusus untuk menghadirkan estetika yang elegan tanpa mengorbankan kenyamanan dan efisiensi.
+          </p>
         </div>
       </div>
     </div>
@@ -589,12 +616,36 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal2Label">Desain Kontemporer Chic</h5>
+          <h5 class="modal-title" id="modal2Label">Project vanity bathroom</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="https://via.placeholder.com/800x500?text=Desain+Kontemporer+Detail" class="img-fluid mb-3" alt="Desain Kontemporer Chic">
-          <p>Perpaduan warna dan elemen modern yang menghasilkan tampilan chic serta stylish. Ideal untuk ruang keluarga dan area komersial.</p>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/mod/1a.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/mod/2a.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/mod/3a.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <p>
+           <strong>vanity bathroom minimalis modern dari</strong><h5>W’Art Home Interior</h5> Dirancang untuk menghadirkan keseimbangan antara estetika dan kenyamanan, vanity kami menciptakan suasana yang lebih eksklusif dan rapi di kamar mandi Anda.
+          </p>
         </div>
       </div>
     </div>
@@ -609,7 +660,7 @@
         </div>
         <div class="modal-body">
           <img src="https://via.placeholder.com/800x500?text=Desain+Industrial+Detail" class="img-fluid mb-3" alt="Desain Industrial Urban">
-          <p>Desain industrial dengan elemen logam dan material kasar, memberikan kesan kuat dan maskulin untuk ruang kreatif atau studio.</p>
+          <p>Desain industrial dirancang untuk menghadirkan keseimbangan antara estetika dan kenyamanan</p>
         </div>
       </div>
     </div>
@@ -680,101 +731,8 @@ Kami berkomitmen untuk menjadi perusahaan desain interior terdepan yang menghadi
             let keterangan = document.getElementById("keterangan").value.trim();
 
             if (!nama || !nohp || !email || !keterangan) {
-                Swal.fire("Error!", "Harap isi semua kolom!", "error");
-                return;
-            }
-
-            let formData = { nama, nohp, email, keterangan };
-            let googleScriptURL = "https://script.google.com/macros/s/AKfycbyHmMk1w99nbabeDBUC6BABlqfPNq1PBaMfP9sYu13U-k74VpZoy2-ECmxgxhSwWQTZ/exec"; // Ganti dengan URL Web App Google Apps Script
-
-            // Konfirmasi Sebelum Mengirim
-            Swal.fire({
-                title: "Konfirmasi Data",
-                html: `Apakah data berikut sudah benar?<br><br>
-                       <strong>Nama:</strong> ${nama}<br>
-                       <strong>No HP:</strong> ${nohp}<br>
-                       <strong>Email:</strong> ${email}<br>
-                       <strong>Keterangan:</strong> ${keterangan}`,
-                icon: "question",
-                showCancelButton: true,
-                confirmButtonText: "Ya, Kirim!",
-                cancelButtonText: "Batal"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    sendData(formData, googleScriptURL);
-                }
-            });
-        });
-
-        function sendData(formData, googleScriptURL) {
-            // 1️⃣ Kirim Data ke Google Sheets
-            fetch(googleScriptURL, {
-                method: "POST",
-                body: JSON.stringify(formData),
-                headers: { "Content-Type": "application/json" }
-            })
-            .then(response => response.text())
-            .then(result => {
-                console.log("Google Sheets:", result);
-            })
-            .catch(error => console.error("Error Sheets:", error));
-
-            // 2️⃣ Kirim Email via EmailJS
-            emailjs.send("service_dk3qo4y", "template_7ja89v3", formData)
-            .then(response => {
-                console.log("Email terkirim!", response);
-            }, error => {
-                console.log("Gagal mengirim email", error);
-            });
-
-            // 3️⃣ Kirim ke WhatsApp
-            let adminWhatsApp = "6281234567890"; // Ganti dengan nomor admin
-            let pesanWA = `Halo, saya ${formData.nama}.\n\n`
-                        + `📞 No HP: ${formData.nohp}\n`
-                        + `📧 Email: ${formData.email}\n`
-                        + `📝 Keterangan: ${formData.keterangan}`;
-
-            let whatsappURL = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(pesanWA)}`;
-
-            // Tampilkan Email di Halaman
-            document.getElementById("emailTampil").innerHTML = `📧 Email Anda: <strong>${formData.email}</strong>`;
-            document.getElementById("emailTampil").style.display = "block";
-
-            // Tampilkan Notifikasi Sukses
-            setTimeout(() => {
-                Swal.fire({
-                    title: "Sukses!",
-                    html: `Data telah dikirim!<br><br>
-                           <strong>Email Anda:</strong> ${formData.email}<br>
-                           Anda akan dialihkan ke WhatsApp.`,
-                    icon: "success",
-                    timer: 3000,
-                    showConfirmButton: false
-                }).then(() => {
-                    window.open(whatsappURL, "_blank");
-                    document.getElementById("contactForm").reset();
-                });
-            }, 1000);
-        }
-    </script>
-  
-<!-- Script kontak -->
-<script>
-        (function(){
-            emailjs.init("ApwZCqr3m6Iq7ccE3"); // Ganti dengan Public Key dari EmailJS
-        })();
-
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            let nama = document.getElementById("nama").value.trim();
-            let nohp = document.getElementById("nohp").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let keterangan = document.getElementById("keterangan").value.trim();
-
-            if (!nama || !nohp || !email || !keterangan) {
-                Swal.fire("Error!", "Harap isi semua kolom!", "error");
-                return;
+            Swal.fire("Error!", "Harap isi semua kolom!", "error");
+            return;
             }
 
             let formData = { nama, nohp, email, keterangan };
@@ -782,50 +740,50 @@ Kami berkomitmen untuk menjadi perusahaan desain interior terdepan yang menghadi
 
             // Konfirmasi Sebelum Mengirim
             Swal.fire({
-                title: "Konfirmasi Data",
-                html: `Apakah data berikut sudah benar?<br><br>
-                       <strong>Nama:</strong> ${nama}<br>
-                       <strong>No HP:</strong> ${nohp}<br>
-                       <strong>Email:</strong> ${email}<br>
-                       <strong>Keterangan:</strong> ${keterangan}`,
-                icon: "question",
-                showCancelButton: true,
-                confirmButtonText: "Ya, Kirim!",
-                cancelButtonText: "Batal"
+            title: "Konfirmasi Data",
+            html: `Apakah data berikut sudah benar?<br><br>
+               <strong>Nama:</strong> ${nama}<br>
+               <strong>No HP:</strong> ${nohp}<br>
+               <strong>Email:</strong> ${email}<br>
+               <strong>Keterangan:</strong> ${keterangan}`,
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonText: "Ya, Kirim!",
+            cancelButtonText: "Batal"
             }).then((result) => {
-                if (result.isConfirmed) {
-                    sendData(formData, googleScriptURL);
-                }
+            if (result.isConfirmed) {
+              sendData(formData, googleScriptURL);
+            }
             });
-        });
+          });
 
-        function sendData(formData, googleScriptURL) {
+          function sendData(formData, googleScriptURL) {
             // 1️⃣ Kirim Data ke Google Sheets
             fetch(googleScriptURL, {
-                method: "POST",
-                body: JSON.stringify(formData),
-                headers: { "Content-Type": "application/json" }
+            method: "POST",
+            body: JSON.stringify(formData),
+            headers: { "Content-Type": "application/json" }
             })
             .then(response => response.text())
             .then(result => {
-                console.log(result);
+            console.log("Google Sheets:", result);
             })
-            .catch(error => console.error("Error:", error));
+            .catch(error => console.error("Error Sheets:", error));
 
             // 2️⃣ Kirim Email via EmailJS
             emailjs.send("service_dk3qo4y", "template_7ja89v3", formData)
             .then(response => {
-                console.log("Email terkirim!", response);
+            console.log("Email terkirim!", response);
             }, error => {
-                console.log("Gagal mengirim email", error);
+            console.log("Gagal mengirim email", error);
             });
 
             // 3️⃣ Kirim ke WhatsApp
-            let adminWhatsApp = "6282189982004"; // Ganti dengan nomor admin
+            let adminWhatsApp = "6281234567890"; // Ganti dengan nomor admin
             let pesanWA = `Halo, saya ${formData.nama}.\n\n`
-                        + `📞 No HP: ${formData.nohp}\n`
-                        + `📧 Email: ${formData.email}\n`
-                        + `📝 Keterangan: ${formData.keterangan}`;
+            + `📞 No HP: ${formData.nohp}\n`
+            + `📧 Email: ${formData.email}\n`
+            + `📝 Keterangan: ${formData.keterangan}`;
 
             let whatsappURL = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(pesanWA)}`;
 
@@ -835,22 +793,22 @@ Kami berkomitmen untuk menjadi perusahaan desain interior terdepan yang menghadi
 
             // Tampilkan Notifikasi Sukses
             setTimeout(() => {
-                Swal.fire({
-                    title: "Sukses!",
-                    html: `Data telah dikirim!<br><br>
-                           <strong>Email Anda:</strong> ${formData.email}<br>
-                           Anda akan dialihkan ke WhatsApp.`,
-                    icon: "success",
-                    timer: 3000,
-                    showConfirmButton: false
-                }).then(() => {
-                    window.open(whatsappURL, "_blank");
-                    document.getElementById("contactForm").reset();
-                });
+            Swal.fire({
+              title: "Sukses!",
+              html: `Data telah dikirim!<br><br>
+               <strong>Email Anda:</strong> ${formData.email}<br>
+               Anda akan dialihkan ke WhatsApp.`,
+              icon: "success",
+              timer: 3000,
+              showConfirmButton: false
+            }).then(() => {
+              window.open(whatsappURL, "_blank");
+              document.getElementById("contactForm").reset();
+            });
             }, 1000);
         }
     </script>
-<!-- akhir skript kontak -->
+  
 
   <script>
   // Fungsi Parallax
@@ -913,6 +871,27 @@ Kami berkomitmen untuk menjadi perusahaan desain interior terdepan yang menghadi
         this.reset();
       });
     }
+  </script>
+  <script>
+    function doPost(e) {
+      try {
+        var sheet = SpreadsheetApp.openById("1r8ngJyj5Y83QAk8GX6aJfBzQ5WuiEa8vhgh-bGtuwr4").getActiveSheet();
+        var data = JSON.parse(e.postData.contents);
+
+        var timestamp = new Date();
+        sheet.appendRow([timestamp, data.nama, data.nohp, data.email, data.keterangan]);
+
+        return ContentService
+          .createTextOutput(JSON.stringify({ status: "success", message: "Data berhasil disimpan!" }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } catch (error) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ status: "error", message: error.toString() }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+    }
+  </script>
+
   </script>
 </body>
 </html>
